@@ -19,7 +19,7 @@ const MobileNav = (props: Props) => {
   // };
 
   return (
-    <nav className="relative p-5">
+    <nav className="relative p-5 md:hidden block">
       <div className="flex justify-between gap-4 items-center">
         <span className={`${openSearch && "hidden"}`}>
           <img src="./images/Logo.svg" alt="logo" width={"78px"} />
