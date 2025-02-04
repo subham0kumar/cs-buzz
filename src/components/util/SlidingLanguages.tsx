@@ -10,7 +10,7 @@ const SlidingLanguages = (props: Props) => {
   const scrollSlider = (direction: "left" | "right") => {
     if (sliderRef.current) {
       sliderRef.current.scrollBy({
-        left: direction === "left" ? -300 : 300,
+        left: direction === "left" ? -200 : 200,
         behavior: "smooth",
       });
     }
