@@ -31,9 +31,12 @@ const NavBar = (props: Props) => {
             </a>
           ))}
         </span>
-        <button className="font-bold flex items-center gap-2  py-1 px-4 border rounded-full bg-[#FBC108]">
+        <button className="font-bold flex items-center gap-2  py-1 px-4 border rounded-full bg-[#FBC108] hover:bg-[#072F53] hover:text-[#FBC108]">
           <h6 className="text-sm">Logout</h6>{" "}
-          <img src="./images/LogoutIcon.svg" />
+          <img
+            src="./images/LogoutIcon.svg"
+            className="text-[#72B2FF] hover:text-[#FBC108]"
+          />
         </button>
       </div>
       <MobileNav />
