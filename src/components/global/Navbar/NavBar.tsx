@@ -1,17 +1,16 @@
-import React from "react";
-import MobileNav from "../MobileNav/MobileNav";
 import SlidingLanguages from "@/components/util/SlidingLanguages";
+import { SIDEBAR_CATEGORIES2 } from "@/Constants/HeroConstants";
 import { Search } from "lucide-react";
-import { SIDEBAR_CATEGORIES } from "@/Constants/HeroConstants";
+import MobileNav from "../MobileNav/MobileNav";
 
 type Props = {};
 
 const NavBar = (props: Props) => {
   return (
-    <div>
-      <div className="flex justify-between gap-4 items-center p-5">
-        <img src="./images/Logo.svg" alt="logo" width={"78px"} />
-        <span className="rounded-full gap-2 bg-[#F1F1F1] px-2 py-1 drop-shadow flex items-center justify-around">
+    <>
+      <nav className="hidden lg:flex justify-around gap-4 items-center py-5 px-10">
+        <img src="./images/Logo.svg" alt="logo" width={"100px"} />
+        <span className="w-1/4 rounded-full gap-2 bg-[#F1F1F1] px-5 py-3 drop-shadow flex items-center justify-start">
           <Search size={18} strokeWidth={1} color="#072F53" />
           <input
             type="text"
@@ -19,8 +18,8 @@ const NavBar = (props: Props) => {
             placeholder="Search here..."
           />
         </span>
-        <span className="rounded-full  bg-[#F1F1F1] px-2 py-1 drop-shadow flex items-center gap-2 justify-around">
-          {SIDEBAR_CATEGORIES.map((category) => (
+        <span className="rounded-full w-1/4 bg-[#F1F1F1] px-5 py-3 drop-shadow flex items-center gap-2 justify-around">
+          {SIDEBAR_CATEGORIES2.map((category) => (
             <a
               key={category}
               href={`#${category}`}
@@ -38,10 +37,10 @@ const NavBar = (props: Props) => {
             className="text-[#72B2FF] hover:text-[#FBC108]"
           />
         </button>
-      </div>
+      </nav>
       <MobileNav />
       <SlidingLanguages />
-    </div>
+    </>
   );
 };
 

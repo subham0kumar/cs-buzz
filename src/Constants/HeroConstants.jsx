@@ -22,6 +22,7 @@ export const SIDEBAR_CATEGORIES = [
   "CUET",
   "Results",
 ];
+export const SIDEBAR_CATEGORIES2 = ["Home", "Olympiad", "CBSE", "CUET"];
 
 export const TRENDING_TECH = [
   {
